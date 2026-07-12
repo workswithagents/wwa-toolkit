@@ -48,6 +48,26 @@ toolRegistry.push({ name: 'crontxt', description: 'Convert natural language time
 import { register as registerDocdiff } from '../../docdiff/src/cli.js';
 toolRegistry.push({ name: 'docdiff', description: 'Flag stale docs by comparing public API symbols against actual code', register: registerDocdiff });
 
+// @wwa/envlock — Detect, validate, and sync .env drift
+import { register as registerEnvlock } from '../../envlock/src/cli.js';
+toolRegistry.push({ name: 'envlock', description: 'Detect, validate, and sync .env drift', register: registerEnvlock });
+
+// @wwa/catchhook — Capture webhook requests in real-time terminal view
+import { register as registerCatchhook } from '../../catchhook/src/cli.js';
+toolRegistry.push({ name: 'catchhook', description: 'Capture webhook requests in real-time terminal view', register: registerCatchhook });
+
+// @wwa/mockwire — Single-file HTTP mock server from a YAML spec
+import { register as registerMockwire } from '../../mockwire/src/cli.js';
+toolRegistry.push({ name: 'mockwire', description: 'Single-file HTTP mock server from a YAML spec', register: registerMockwire });
+
+// @wwa/tasklog — Minimal CLI time tracker in one JSON file
+import { register as registerTasklog } from '../../tasklog/src/cli.js';
+toolRegistry.push({ name: 'tasklog', description: 'Minimal CLI time tracker in one JSON file', register: registerTasklog });
+
+// @wwa/pr-summarizer-action — AI-generated PR summary as CLI tool
+import { register as registerPrSummarizer } from '../../pr-summarizer-action/src/cli.js';
+toolRegistry.push({ name: 'pr-summarize', description: 'AI-generated PR summary as CLI tool', register: registerPrSummarizer });
+
 for (const tool of toolRegistry) {
   tool.register(program);
 }
