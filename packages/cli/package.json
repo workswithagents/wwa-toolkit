@@ -12,7 +12,21 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "commander": "^12.0.0"
+    "commander": "^12.0.0",
+    "@wwa/git-ctx": "*",
+    "@wwa/todo-scout": "*",
+    "@wwa/curlto": "*",
+    "@wwa/crontxt": "*",
+    "@wwa/docdiff": "*",
+    "@wwa/envlock": "*",
+    "@wwa/catchhook": "*",
+    "@wwa/mockwire": "*",
+    "@wwa/tasklog": "*",
+    "@wwa/pr-summarizer-action": "*",
+    "@wwa/md2slides": "*",
+    "@wwa/jsonmask": "*",
+    "@wwa/confhist": "*",
+    "@wwa/watchalert": "*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
